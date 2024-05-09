@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <title id="main">Moja strona</title>
+        <link rel="stylesheet" href="HTML-test_general_style.css">
+        <style>
+            table {
+                border: 3px solid black;
+                border-radius: 10px;
+                border-spacing: 0.2cm;
+                width: 62%
+            }
+            tr {
+                border-bottom: 5px solid black;
+            }
+            tr:hover {
+                background-color: rgba(127, 255, 212, 50%);
+            }
+            th, td {
+                padding: 5px
+            }
+            th {
+                background-color:powderblue;
+                border: 5px solid steelblue;
+                border-radius: 5px;
+                border-style: ridge;
+            }
+            td {
+                border: 1px solid black;
+                border-radius: 5px;
+                text-align: center;
+            }
+            .resp {
+                background-color: aquamarine;
+                margin: auto;
+                width: 600px;
+                padding: 20px;
+            }
+            @media screen and (max-width: 600px) {
+                .resp {
+                    width: 100%;
+                }
+            }
+        </style>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="HTML, tutorial, lorem ipsum">
+        <meta name="author" content="Yako">
+        <meta name="description" content="Notebook for HTML practice">
+        <meta http-equiv="refresh" content="30">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base target="_blank">
+    </head>
+    <body>
+        <h1 style="font-size:50px" title="To jest pierwszy rozdział strony.">Pierwszy heading</h1>
+        <p>Lorem ipsum pierwszego paragrafu</p>
+        <a href="https://twitter.com">Link do twittera</a>
+        <hr>
+        <img src="template.png" alt="Tu powinno być zdjęcie template.png" width="104" height="142">
+        <p style="color: brown;">To jest czerwony<br> paragraf.</p>
+        <pre>
+            Pierwszy wiersz wiersza
+
+            Drugi taki wiersz
+
+            A potem kolejny...
+        </pre>
+        <h2>Sekcja tabeli</h2>
+        <table>
+            <caption><strong>Tabela numer Pierwsza</strong></caption>
+            <colgroup>
+                <col span="2" style="background-color: rgba(255, 99, 71, 50%);">
+            </colgroup>
+            <tr>
+                <th style="width: 60px; height: 30px;">Element</th>
+                <th>Numer</th>
+                <th colspan="2">Kolor</th>
+            </tr>
+            <tr>
+                <td>Coś1</td>
+                <td>Jeden</td>
+                <td rowspan="2">Czerwony</td>
+                <td>Różowy</td>
+            </tr>
+            <tr>
+                <td>Cośinnego2</td>
+                <td>Dwa</td>
+                <!-- <td>Niebieski</td> -->
+                <td>Purpurowy</td>
+            </tr>
+        </table>
+
+        <h2>Teraz czas na listy</h2>
+        <ul style="list-style-type:square;">
+            <li>Kawa</li>
+            <li>Herbata</li>
+            <li>Mleko</li>
+        </ul>
+        <ol type="I" start="11">
+            <li>Jedna kawa</li>
+            <li>Dwie herbaty</li>
+            <li>Trzy mleka</li>
+
+        </ol>
+        <dl>
+            <caption><strong>Lista opisowa</strong></caption>
+            <dt>Kawa</dt>
+            <dd>Jeden worek!</dd>
+            <dt>Herbata</dt>
+            <dd>Dwie torebki!</dd>
+            <dt>Mleko</dt>
+            <dd>Trzy kartony!</dd>
+        </dl>
+        <h3><a href="HTML-test_nav_menu.html#navmenu">Navigation menu created with unordered list</a></h3>
+        
+        <h2>Idziemy dalej</h2>
+        <div style="width:300px;margin:auto;background-color:antiquewhite;padding: 5%;">
+            <h3>To jest bloczek zamieszczony w elemencie div</h3>
+            <p>Mogę tu napisać różne rzeczy, i wszystkie będą oddzielone od reszty.</p>
+            <a href="HTML-test_div_align.html#divalign">Tutaj przykład dopasowania kilku div'ów koło siebie</a>
+        </div>
+
+        <h2>Czas na IFrame</h2>
+        <a href="HTML-test_div_align.html" target="iframe_divalign" style="padding:10px;display: block;border: 1px solid black;background-color: lightgreen;">Resetuj IFrame</a>
+        <iframe src="HTML-test_div_align.html" name="iframe_divalign" title="Zawartość strony na temat DIV align" style="height:300px;width:100%;"></iframe>
+        
+        <h2>Responsive Design</h2>
+        <div class="resp">
+            <h3>Nagłówek responsywnego DIV'a</h3>
+            <p>Akapit pełen długiego i bezsensownego zmyślonego na poczekaniu tekstu zawartości do &quot;responsywnego DIVA&quot;, jak należy.</p>
+        </div>
+        <section style="font-size: 2.5vw">
+            <h2>Formatowanie kodo-podobne</h2>
+            <em>&lt;kbd&gt;</em> - keyboard input: <kbd>Ctrl+S</kbd><br>
+            <em>&lt;samp&gt;</em> - sample output from a computer program: <samp>File not found.</samp><br>
+            <em>&lt;code&gt;</em> - computer code: <code>void MojaFunkcja(){...};</code><br>
+            <em>&lt;var&gt;</em> - variable: Użyj zmiennej <var>x</var> do...
+        </section>
+        
+    </body>
+</html>
