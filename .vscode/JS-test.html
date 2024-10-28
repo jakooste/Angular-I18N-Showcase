@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Test</title>
+</head>
+<body>
+<h1>Testing page for JavaScript</h1>
+<div class="target1"> Obiekt docelowy nr 1</div>
+<div class="target2"> Obiekt docelowy nr 2</div>
+<button>Przycisk</button>
+</body>
+<script>
+    function createParagraph() {
+        const para = document.createElement("p");
+        para.textContent = "Paragraf wygenerowany przez createParagraph()";
+        document.body.appendChild(para);
+    }
+    const buttons = document.querySelectorAll("button");
+
+    for (const button of buttons) {
+        button.addEventListener("click", createParagraph);
+    }
+</script>
+</html>
