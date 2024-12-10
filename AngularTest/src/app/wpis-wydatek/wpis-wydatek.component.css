@@ -1,0 +1,15 @@
+* {
+  --text-color: #fdfdfd;
+  --background-color: #686868;
+  --text-size: 1.5rem;
+}
+
+div {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin: 5px 0;
+  background: var(--background-color);
+  color: var(--text-color);
+  font-size: var(--text-size);
+}

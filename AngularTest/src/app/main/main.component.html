@@ -1,0 +1,24 @@
+<fieldset>
+  <legend>Kontrolki</legend>
+  <div class="zestaw_kontrolek">
+    <div class="kontrolka">
+      <h3>Wybierz płeć</h3>
+      <div class="przycisk">
+        <input type="radio" id="select_gender_male" name="gender" (click)="male()">
+        <label for="select_gender_male">mężczyzna</label>
+      </div>
+      <div class="przycisk">
+        <input type="radio" id="select_gender_female" name="gender" (click)="female()">
+        <label for="select_gender_female">kobieta</label>
+      </div>
+      <h3>To dotyczy {_gender, select, male {jego} female {jej}}</h3>
+    </div>
+    <div class="kontrolka">
+      <h3>Jak dawno?</h3>
+      <div class="przycisk">
+        <label for="input_minutes">Podaj liczbę minut:</label>
+        <input type="number" id="input_minutes" name="input_minutes" [defaultValue]="1">
+      </div>
+    </div>
+  </div>
+</fieldset>

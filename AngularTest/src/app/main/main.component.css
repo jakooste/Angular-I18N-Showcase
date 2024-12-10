@@ -1,0 +1,16 @@
+.zestaw_kontrolek {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.kontrolka {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.przycisk {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+}

@@ -1,0 +1,8 @@
+<div>
+  <button (click)="changeModeWydatki()">Wydatki</button>
+  <button (click)="changeModeCzlonkowie()">Członkowie</button>
+  <button (click)="changeModeRozliczenia()">Rozliczenia</button>
+</div>
+@if (mode == 0) {
+  <app-tab-wydatki></app-tab-wydatki>
+}
