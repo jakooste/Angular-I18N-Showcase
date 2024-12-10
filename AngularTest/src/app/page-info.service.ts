@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class PageInfoService {
 
-  private _pageTitle = $localize`:{nazwa witryny|string zawierający nazwę strony w mianowniku@@nazwa01}:Strona Testowa`;
+  private _pageTitle = `Strona Testowa`;
   private _numberOfChairs = 1;
   private _numberOfMinutes = 1;
   private _gender = 0;
