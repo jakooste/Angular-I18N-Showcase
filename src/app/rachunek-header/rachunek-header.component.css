@@ -1,0 +1,26 @@
+* {
+  --background-color: #686868;
+  --text-color: #fdfdfd;
+}
+
+div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: var(--background-color);
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--text-color);
+  margin: 2rem;
+}
+
+img {
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+  margin: 2rem;
+  width: 128px;
+  height: 128px;
+}

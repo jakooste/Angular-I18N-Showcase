@@ -1,0 +1,11 @@
+<div>
+  @for (wydatek of wydatki(); track wydatki()) {
+    <app-wpis-wydatek [nazwa]=wydatek[0] [kwota]=wydatek[1] [waluta]=wydatek[2] [autor]="wydatek[3]"></app-wpis-wydatek>
+  }
+</div>
+
+
+  <p i18n="metadane"> Tekst do tłumaczenia </p>
+
+
+  <img alt="tekst alternatywny" i18n-alt="metadane">
