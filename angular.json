@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "localize": ["pl-PL"],  // na jakie języki lokalizować
+            "localize": ["en-US"],
             "outputPath": "dist/angular-test",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -105,11 +105,14 @@
         }
       },
       "i18n": {
-        "sourceLocale": "pl-PL",  // domyślny locale
+        "sourceLocale": "pl",
         "locales": {
-          "en-US": "src/locale/messages.en-US.xlf", // lista locale ze ścieżkami do plików tłumaczeń
+          "en-US": "src/locale/messages.en-US.xlf"
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

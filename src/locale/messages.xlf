@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="pl-PL" datatype="plaintext" original="ng2.template">
+  <file source-language="pl" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="identyfikator02" datatype="html">
         <source>ikona rachunku</source>
@@ -47,12 +47,43 @@
         <note priority="1" from="description">nazwa karty rozliczenia na przycisku otwierającym kartę</note>
         <note priority="1" from="meaning">karta rozliczenia</note>
       </trans-unit>
-      <trans-unit id="1067335920108227100" datatype="html">
-        <source>{VAR_PLURAL, plural, one {Do rachunku należy <x id="INTERPOLATION"/> osoba} few {Do rachunku należą <x id="INTERPOLATION"/> osoby} many {Do rachunku należy <x id="INTERPOLATION"/> osób} other {osób99}}</source>
+      <trans-unit id="6936817567440932591" datatype="html">
+        <source>{VAR_PLURAL, plural, one {należy <x id="INTERPOLATION"/> osoba} few {należą <x id="INTERPOLATION"/> osoby} many {należy <x id="INTERPOLATION"/> osób}}</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tab-czlonkowie/tab-czlonkowie.component.html</context>
           <context context-type="linenumber">7</context>
         </context-group>
+      </trans-unit>
+      <trans-unit id="2293529204275072832" datatype="html">
+        <source>{VAR_SELECT, select, M {mu} K {jej} I {im}}</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/tab-czlonkowie/tab-czlonkowie.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8076923784265039185" datatype="html">
+        <source> Tekst do tłumaczenia </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/tab-wydatki/tab-wydatki.component.html</context>
+          <context context-type="linenumber">8,11</context>
+        </context-group>
+        <note priority="1" from="description">metadane</note>
+      </trans-unit>
+      <trans-unit id="3421151191585619120" datatype="html">
+        <source>tekst alternatywny</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/tab-wydatki/tab-wydatki.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description">metadane</note>
+      </trans-unit>
+      <trans-unit id="2554753468699927771" datatype="html">
+        <source>Tomek</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/tab-wydatki/tab-wydatki.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <note priority="1" from="description">metadane</note>
       </trans-unit>
     </body>
   </file>
